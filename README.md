@@ -10,9 +10,20 @@ This includes:
 -(iv) (i) + Trade bans
 -(v) (i) + all shocks combined
 
-All optimisation is written in Pyomo with HSL's MA27 as (non-linear) solver. 
+All optimisation is written in Pyomo (https://www.pyomo.org/) with HSL's MA27 as (non-linear) solver:
+https://github.com/coin-or-tools/ThirdParty-HSL
+Alternatively, one can run the code using the standard ipopt solver in Pyomo. 
 
-Alongside the code for the paper, we uploaded a small demo model based on the AGRODEP Spatial trade model developed by IFPRI:
-https://www.agrodep.org/models/agrodep-spatial-equilibrium-model
+Software requirements:
+-Python Python 3.9.12
+-Tested on MacOS Monterey v12.2.1
+
+Runtime:
+-Calibration runtime depends on crop but around 1-2h.
+-To run the shocks, runtime is around 15 minutes per modelled year. 
+
+Demo:
+Alongside the code for the paper, we uploaded a small demo model based on the AGRODEP Spatial trade model developed by IFPRI (https://www.agrodep.org/models/agrodep-spatial-equilibrium-model), which can help users to get familiar with spatial price equilibrium modelling. We have modified the original AGRODEP model to be in line with the trade cost formulation adopted in our paper. 
+Runtime should be minutes. 
 
 
