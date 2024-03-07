@@ -12,3 +12,7 @@ This includes:
 
 All optimisation is written in Pyomo with HSL's MA27 as (non-linear) solver. 
 
+Alongside the code for the paper, we uploaded a small demo model based on the AGRODEP Spatial trade model developed by IFPRI:
+https://www.agrodep.org/models/agrodep-spatial-equilibrium-model
+
+
